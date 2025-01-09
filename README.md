@@ -1,16 +1,34 @@
-# Vehicle-and-Warehouses-using-ML
-python tsp_ga.py
-# Write content to README.md file
-with open("README.md", "w") as file:
-    file.write(content)
-print("README.md file created successfully!")
+# Genetic Algorithm for Traveling Salesman Problem (TSP)
 
-### How It Works:
-1. The function `create_readme()` generates a string containing the content for your `README.md` file.
-2. It writes this content into a file named `README.md` using Python’s file handling.
-3. Once the script is executed, the `README.md` file will be created in the current directory with all the necessary details.
+This project addresses the **Traveling Salesman Problem (TSP)** using a **Genetic Algorithm (GA)**. The objective is to determine the shortest possible route that visits all cities exactly once and returns to the origin city (depot). The implementation utilizes the DEAP (Distributed Evolutionary Algorithms in Python) library.
 
-You can run this script in the same directory where your project code is located, and it will generate a ready-to-use `README.md` for your project.
+## Table of Contents
 
-Let me know if you need any modifications!
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Algorithm Details](#algorithm-details)
+- [Results](#results)
+- [License](#license)
+
+## Introduction
+
+The **Traveling Salesman Problem (TSP)** is a classic optimization problem where the goal is to find the shortest route that visits each city once and returns to the starting point. This project employs a **Genetic Algorithm (GA)** to solve the TSP, providing a heuristic approach to the problem.
+
+### Key Features:
+- **Genetic Algorithm**: Utilizes selection, crossover, and mutation operations to evolve the population towards an optimal solution.
+- **DEAP Library**: Leverages DEAP, a flexible library for evolutionary algorithms.
+- **Visualization**: Ability to visualize routes (if extended).
+
+## Installation
+
+To run this project, you'll need to install the following dependencies:
+
+1. **DEAP**: The core library for evolutionary algorithms.
+2. **NumPy**: For numerical operations.
+
+### Install Dependencies
+
+```bash
+pip install deap numpy
 
