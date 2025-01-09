@@ -8,8 +8,6 @@ This project addresses the **Traveling Salesman Problem (TSP)** using a **Geneti
 - [Installation](#installation)
 - [Usage](#usage)
 - [Algorithm Details](#algorithm-details)
-- [Results](#results)
-- [License](#license)
 
 ## Introduction
 
@@ -31,11 +29,11 @@ To run this project, you'll need to install the following dependencies:
 The algorithm uses DEAP's eaSimple function, which implements a simple evolutionary algorithm with the following components:
 
 Population Initialization: A population of individuals (routes) is initialized, where each individual is a permutation of cities (excluding the depot).
-Selection: Tournament Selection (tools.selTournament) is used to select parents for reproduction.
-Crossover: Ordered Crossover (tools.cxOrdered) is applied to combine two parents and produce offspring.
-Mutation: Shuffle Mutation (tools.mutShuffleIndexes) is applied to randomly shuffle the cities in an individual’s route.
-Fitness Function: The fitness function calculates the total distance of a route using Euclidean distance between cities.
-Algorithm Execution: The eaSimple function runs the algorithm for a set number of generations, evolving the population and selecting the best solution.
+1.Selection: Tournament Selection (tools.selTournament) is used to select parents for reproduction.
+2.Crossover: Ordered Crossover (tools.cxOrdered) is applied to combine two parents and produce offspring.
+3.Mutation: Shuffle Mutation (tools.mutShuffleIndexes) is applied to randomly shuffle the cities in an individual’s route.
+4.Fitness Function: The fitness function calculates the total distance of a route using Euclidean distance between cities.
+5.Algorithm Execution: The eaSimple function runs the algorithm for a set number of generations, evolving the population and selecting the best solution.
 
 ### Install Dependencies
 
