@@ -25,18 +25,36 @@ To run this project, you'll need to install the following dependencies:
 1. **DEAP**: The core library for evolutionary algorithms.
 2. **NumPy**: For numerical operations.
 
+# Evolutionary Algorithm for Routing Problem
+
 ## Algorithm Details
-The algorithm uses DEAP's eaSimple function, which implements a simple evolutionary algorithm with the following components:
+The algorithm uses DEAP's `eaSimple` function, which implements a simple evolutionary algorithm with the following components:
 
-Population Initialization: A population of individuals (routes) is initialized, where each individual is a permutation of cities (excluding the depot).
-1.**Selection:** Tournament Selection (tools.selTournament) is used to select parents for reproduction.
-2.**Crossover:** Ordered Crossover (tools.cxOrdered) is applied to combine two parents and produce offspring.
-3.**Mutation:** Shuffle Mutation (tools.mutShuffleIndexes) is applied to randomly shuffle the cities in an individual’s route.
-4.**Fitness Function:** The fitness function calculates the total distance of a route using Euclidean distance between cities.
-5.**Algorithm Execution:** The eaSimple function runs the algorithm for a set number of generations, evolving the population and selecting the best solution.
+1. **Population Initialization:**  
+   - A population of individuals (routes) is initialized, where each individual is a permutation of cities (excluding the depot).
 
-### Install Dependencies
+2. **Selection:**  
+   - Tournament Selection (`tools.selTournament`) is used to select parents for reproduction.
+
+3. **Crossover:**  
+   - Ordered Crossover (`tools.cxOrdered`) is applied to combine two parents and produce offspring.
+
+4. **Mutation:**  
+   - Shuffle Mutation (`tools.mutShuffleIndexes`) is applied to randomly shuffle the cities in an individual’s route.
+
+5. **Fitness Function:**  
+   - The fitness function calculates the total distance of a route using Euclidean distance between cities.
+
+6. **Algorithm Execution:**  
+   - The `eaSimple` function runs the algorithm for a set number of generations, evolving the population and selecting the best solution.
+
+---
+
+## Install Dependencies
+
+To run the code, install the following dependencies:  
 
 ```bash
 pip install deap numpy
+
 
