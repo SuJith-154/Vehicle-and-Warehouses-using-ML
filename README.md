@@ -1,6 +1,6 @@
-# Genetic Algorithm for Traveling Salesman Problem (TSP)
+# Genetic Algorithm for Vehicle Routing Problem (VRP)
 
-This project addresses the **Traveling Salesman Problem (TSP)** using a **Genetic Algorithm (GA)**. The objective is to determine the shortest possible route that visits all cities exactly once and returns to the origin city (depot). The implementation utilizes the DEAP (Distributed Evolutionary Algorithms in Python) library.
+This project addresses the **Vehicle Routing Problem (VRP)** using a **Genetic Algorithm (GA)**. The objective is to determine the most efficient set of routes for a fleet of vehicles to serve a given set of customers while minimizing the total travel distance or time. The implementation utilizes the DEAP (Distributed Evolutionary Algorithms in Python) library.
 
 ## Table of Contents
 
@@ -11,12 +11,14 @@ This project addresses the **Traveling Salesman Problem (TSP)** using a **Geneti
 
 ## Introduction
 
-The **Traveling Salesman Problem (TSP)** is a classic optimization problem where the goal is to find the shortest route that visits each city once and returns to the starting point. This project employs a **Genetic Algorithm (GA)** to solve the TSP, providing a heuristic approach to the problem.
+The **Vehicle Routing Problem (VRP)** is a challenging optimization problem and a generalization of the Traveling Salesman Problem (TSP). The aim is to design the shortest possible routes for a fleet of vehicles that visit all customer locations while respecting constraints such as vehicle capacity and route length.
 
 ### Key Features:
 - **Genetic Algorithm**: Utilizes selection, crossover, and mutation operations to evolve the population towards an optimal solution.
+- **Multiple Routes**: Handles multiple vehicles with defined constraints like vehicle capacity.
 - **DEAP Library**: Leverages DEAP, a flexible library for evolutionary algorithms.
 - **Visualization**: Ability to visualize routes (if extended).
+
 
 ## Installation
 
